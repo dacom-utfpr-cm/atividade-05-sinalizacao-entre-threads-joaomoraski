@@ -12,7 +12,7 @@ public class Consumidor extends Thread {
         try {
             while (true) {
                 buffer.consumir();
-                Thread.sleep((int) (Math.random() * 1000)); // Simula tempo aleatório de consumo
+                Thread.sleep((int) (Math.random() * 1000));
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

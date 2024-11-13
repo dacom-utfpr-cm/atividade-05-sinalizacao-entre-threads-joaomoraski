@@ -13,7 +13,7 @@ public class Produtor extends Thread {
             while (true) {
                 int valorProduzido = (int) (Math.random() * 100);
                 buffer.produzir(valorProduzido);
-                Thread.sleep((int) (Math.random() * 1000)); // Simula tempo aleatório de produção
+                Thread.sleep((int) (Math.random() * 1000));
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
